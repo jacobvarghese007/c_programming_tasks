@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main()
+{
+        char fname[10],lname[10];
+        printf("enter your first name : \n");
+        fgets(fname,10,stdin);
+        printf("enter your last name : \n");
+        fgets(lname,10,stdin);
+
+        strcat(fname,lname);
+
+        printf("your full name is :\n%s ",fname);
+        printf("\n");
+        return 0;
+}
