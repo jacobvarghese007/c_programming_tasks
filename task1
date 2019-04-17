@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+        char name[20];
+        int age;
+        long int phone;
+
+        printf("enter your details \n");
+
+        printf("enter your name :\n");
+        fgets(name,20,stdin);
+        printf("ente you age :\n");
+        scanf("%d",&age);
+        printf("enter your phone :\n");
+        scanf("%ld",&phone);
+
+        printf("\nyour details are \n");
+
+        printf("your name is : %s",name);
+        printf("your age is : %d\n",age);
+        printf("your phone no. is : %ld\n",phone);
+        return 0;
+}
+                                                                                                                                                                                               
