@@ -1,0 +1,36 @@
+int main()
+{
+        int temp=0,n=0,sum=0,rem=0;
+        int num=0;
+        printf("enter integer ");
+        scanf("%d", &num);
+
+
+
+
+
+        temp=num;
+        while(temp!=0)
+        {
+                temp=temp/10;
+                n=n+1;
+
+        }
+        temp=num;
+
+
+        while (temp!=0)
+        {
+                rem=temp%10;
+                sum=sum + pow(rem,n);
+                temp=temp/10;
+
+        }
+
+
+        if(sum==num)
+                printf("it is an armstrong number\n");
+        else
+                printf("not an armstrong number\n");
+        return 0;
+}
