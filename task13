@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main()
+{
+        int num=0,fnum=0,lar=0,smal=0;
+        printf("enter the size of an array : \n");
+        scanf("%d",&num);
+
+        printf("enter the  elements in the array :\n");
+        scanf("%d",&fnum);
+        lar=fnum;
+        smal=fnum;
+
+        int val=0;
+
+        for(int i=1;i<num;i++)
+        {
+                scanf("%d",&val);
+
+                if(val>lar)
+                        lar=val;
+                if(val<smal)
+                        smal=val;
+
+
+        }
+        printf("the largest number is %3d\n",lar);
+        printf("the smallest number is %3d\n",smal);
+        return 0;
+
+
+}
