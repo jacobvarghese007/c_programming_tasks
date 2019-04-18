@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+        int num=0;
+        printf("enter a number to make a pyramid : \n");
+        scanf("%d",&num);
+        int c=num;
+
+        for(int i=0;i<c;i++)
+        {
+
+
+                for(int j=1;j<=num;j++)
+                {
+                        printf("%d",j);
+
+                }
+                printf("\n");
+                num=num-1;
+
+
+        }
+        return 0;
+}
