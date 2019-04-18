@@ -1,0 +1,42 @@
+#include<stdio.h>
+#define maxsize 20
+void read();
+void display();
+
+struct BOOK {
+        char title[maxsize];
+        char author[maxsize];
+        char genre[maxsize];
+
+};
+
+typedef struct BOOK book;
+
+book s1;
+
+
+int main()
+{
+        read();
+
+        display();
+        return 0;
+}
+
+void read()
+        {
+                printf("enter book tiltle :\n");
+                fgets(s1.title,maxsize,stdin);
+
+                printf("enter author name :\n");
+                fgets(s1.author,maxsize,stdin);
+
+                printf("enter genre : \n");
+                fgets(s1.genre,maxsize,stdin);
+        }
+void display()
+        {
+                printf("\nbook tilte is : %s\n",s1.title);
+                printf("author name is : %s\n",s1.author);
+                printf("genre is : %s\n",s1.genre);
+         }       
